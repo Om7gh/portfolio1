@@ -1,0 +1,126 @@
+@media (max-width: 799px) {
+  .glace {
+    height: 80%;
+    width: 100vw;
+    z-index: 1;
+  }
+  .cercle {
+    display: none;
+  }
+
+  main .left-barre img {
+    margin-top: 20rem;
+  }
+
+  main .left-barre .go-back-to-home {
+    bottom: 8rem;
+    background: none;
+    border: 2px solid $darkMainColor;
+    border-radius: 10px;
+    width: 120px;
+    height: 40px;
+  }
+
+  main .right-barre .hero-content .text-content .my-cv {
+    position: absolute;
+    bottom: 5%;
+    padding: 5px 10px;
+    background: none;
+    border: 2px solid $darkMainColor;
+    border-radius: 10px;
+  }
+  main .menu .menus {
+    flex-direction: row;
+    height: 30px;
+    width: 100%;
+  }
+
+  main .menu .menus li a {
+    font-size: 1.2rem;
+    font-family: "poppins";
+    font-weight: 700;
+    color: #003e79;
+    margin: 0 5px;
+  }
+
+  circle {
+    cx: 80;
+    cy: 80;
+    r: 50;
+    stroke-linecap: round;
+  }
+
+  .right-barre .hero-content .box-competance {
+    height: 70%;
+  }
+
+  .right-barre .hero-content .box-competance .cercle-progress .info {
+    font-size: 1.2rem;
+    font-weight: 500;
+  }
+
+  .glace .left .box-serv h2 {
+    text-align: center;
+  }
+
+  .glace .right .hero-content .carte {
+    text-align: center;
+    height: 60%;
+  }
+  .glace .right .hero-content .carte .content-cart .parag-loding {
+    font-size: 1.3rem;
+    margin-top: 5rem;
+}
+
+  .glace form {
+    width: 85%;
+    height: 85%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .glace form .inp input,
+  .glace form .inp textarea {
+    width: 30rem;
+    height: 5rem;
+  }
+
+.glace form .inp textarea {
+    width: 30rem;
+    height: 15rem;
+    resize: none;
+}
+
+.glace form button {
+    bottom: 15%;
+    left: 50%;
+    transform: translate(-50%);
+ 
+}
+
+nav .box ul li {
+  width: 120px;
+  height: 30px;
+  padding: 8px 10px;
+}
+
+main .left-barre img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+main .right-barre .hero-content .text-content p {
+  font-size: 1.4rem;
+}
+main .menu .fa-bars {
+  margin-left: 93%;
+}
+
+main .left-barre .go-back-to-home {
+  bottom: 22rem;
+  padding: 0;
+}
+}

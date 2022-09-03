@@ -1,0 +1,196 @@
+.title {
+  position: absolute;
+  top: 20px;
+  left: 30px;
+  border-radius: 1.2rem;
+  padding: 5px 15px;
+  h1 {
+    font: {
+      family: "Roboto";
+      size: 2.5rem;
+      weight: 600;
+    }
+    color: $DarkerMainColor;
+  }
+  i {
+    margin: 0 0.5rem 0.5rem 0;
+    color: $toDarkMainColor;
+  }
+}
+
+main {
+  .menu {
+    position: absolute;
+    right: 15px;
+    top: 15px;
+   
+
+    .fa-bars {
+      margin-left: 100px;
+      font-size: 2rem;
+      cursor: pointer;
+      color: $DarkerMainColor;
+    }
+
+    .menus {
+      border: 1px solid rgba(255, 255, 255, 0.5);
+      border-radius: 1.2rem;
+      width: 120px;
+      height: 200px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-evenly;
+      transform: translateX(600px);
+      transition: .3s ease;
+
+      li {
+        padding: 3px 5px;
+        border-radius: 1.2rem;
+        a {
+          font: {
+            size: 1.2rem;
+            family: "poppins";
+            weight: 600;
+          }
+          color: $toDarkMainColor;
+        }
+        i {
+          color: $DarkerMainColor;
+          margin-right: 0.3rem;
+        }
+      }
+      li:hover {
+        background-color: rgba(255, 255, 255, 0.5);
+      }
+    } .show {
+        transform: translateX(0);
+      }
+  }
+  
+
+  .left-barre {
+    position: absolute;
+    width: 30%;
+    height: 100%;
+    background-color: $mainColor;
+    border-top-right-radius: 1.2rem;
+    border-bottom-right-radius: 1.2rem;
+
+    .go-back-to-home {
+        position: absolute;
+        bottom: 3rem;
+        width: 200px;
+        height: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: $mainColor;
+        i {
+            font-size: 2rem;
+            cursor: pointer;
+            color: $DarkerMainColor;
+            margin-right: .5rem;
+        }
+        a {
+            font: {
+                size: 1.5rem;
+                family: 'poppins';
+                weight: 500;
+            }
+            color: $black;
+        }
+    }.go-back-to-home:hover {
+        background-color: $white    ;
+    }
+
+    img {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      margin-top: 8rem;
+      margin-bottom: 2rem;
+    }
+
+    .hero {
+      position: absolute;
+      width: 80%;
+      height: 90%;
+      background-color: rgba(255, 255, 255, 0.5);
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      border: none;
+      border-radius: 1.2rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: center;
+
+      h2 {
+        font: {
+          size: 2rem;
+          family: "Poppins";
+          weight: 700;
+        }
+        color: $DarkerMainColor;
+      }
+    }
+  }
+  .right-barre {
+    position: absolute;
+    height: 100%;
+    width: 70%;
+    right: 0;
+
+    .hero-content {
+        position: absolute;
+     height: 90%;
+     width: 90%;
+     top: 50%;
+     left: 50%;
+     transform: translate(-50%,-50%);
+     background-color: rgba(255, 255, 255, 0.5);
+     border-radius: 1.2rem;
+
+     .text-content {
+        width: 70%;
+        height: 80%;
+        position: absolute;
+        top: 30%;
+        left: 50%;
+        transform: translate(-50%,-30%);
+        p {
+            font: {
+                size: 1.8rem;
+                family: 'roboto';
+                weight: 500;
+            }
+            color: $toDarkMainColor;
+            line-height: 1.6;
+            letter-spacing: .1rem;
+        }
+        .my-cv {
+            position: absolute;
+            bottom: 4rem;
+            font: {
+                size: 1.5rem;
+                family: 'poppins';
+                weight: 600;
+            }
+            color: $black;
+            background-color: $mainColor;
+            padding: .5rem 1.2rem;
+            border-radius: .5rem;
+        }.my-cv:hover {
+            background-color: $white;
+        }
+        i {
+            margin-right: .5rem;
+        }
+     }
+    }
+}
+}
+
+

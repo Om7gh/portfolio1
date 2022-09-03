@@ -1,0 +1,341 @@
+main {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(to right top, $mainColor, $darkMainColor);
+  position: relative;
+}
+
+.cover {
+  height: 100vh;
+  width: 100vw;
+  background-color: $mainColor;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  h1 {
+    font-size: 50px;
+    font-family: "Mochiy Pop One";
+    color: $DarkerMainColor;
+  }
+  .bouton {
+    height: 50px;
+    width: 50px;
+    background-color: rgb(229, 238, 254);
+    border-radius: 50%;
+    margin-right: 1rem;
+    animation: ball 0.9s ease-in infinite;
+  }
+  .bouton:nth-child(3) {
+    animation-delay: 0.25s;
+    background-color: $toDarkMainColor;
+  }
+  .bouton:nth-child(2) {
+    background-color: $darkMainColor;
+    animation-delay: 0.15s;
+  }
+  .bouton:nth-child(4) {
+    background-color: $DarkerMainColor;
+    animation-delay: 0.35s;
+  }
+  @keyframes ball {
+    0% {
+      transform: translateY(0px);
+    }
+    50% {
+      transform: translateY(-50px);
+    }
+    100% {
+      transform: translateY(0px);
+    }
+  }
+}
+
+.glace {
+  width: 80%;
+  height: 80%;
+  background: linear-gradient(
+    to right bottom,
+    rgba(255, 255, 255, 0.7),
+    rgba(255, 255, 255, 0.2)
+  );
+  border-radius: 1rem;
+  z-index: 9;
+  position: relative;
+}
+
+.cercle {
+  position: absolute;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  background: linear-gradient(
+    to top left,
+    rgba(255, 255, 255, 0.8),
+    rgba(255, 255, 255, 0.3)
+  );
+  z-index: 10;
+}
+.cercle1 {
+  bottom: 3%;
+  left: 5%;
+}
+
+.cercle2 {
+  top: 3%;
+  right: 5%;
+}
+
+nav {
+  height: 100%;
+  width: 30%;
+  background-color: $mainColor;
+  border-top-right-radius: 1.5rem;
+  border-bottom-right-radius: 1.5rem;
+  position: relative;
+
+  .box {
+    width: 80%;
+    height: 90%;
+    background-color: rgba(255, 255, 255, 0.5);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 1.5rem;
+
+    .img {
+      height: 30%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      img {
+        height: 100px;
+        width: 100px;
+        border-radius: 50%;
+      }
+      h1 {
+        margin-top: 1rem;
+        font-size: 1.6rem;
+        font-family: "Mochiy Pop One";
+        color: $toDarkMainColor;
+      }
+    }
+    ul {
+      height: 50%;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      align-items: center;
+
+      li {
+        background-color: $mainColor;
+        width: 160px;
+        height: 30px;
+        padding: 8px 30px;
+        display: flex;
+        justify-content: center;
+        border-radius: 1rem;
+
+        i {
+          color: $toDarkMainColor;
+          font-size: 13px;
+          margin-right: 0.5rem;
+        }
+        a {
+          color: $DarkerMainColor;
+          font-family: "poppins";
+          font-size: 1.2rem;
+          font-weight: 500;
+        }
+      }
+      li:hover {
+        transform: scale(1.1);
+        background-color: $white;
+      }
+    }
+    .btn {
+      bottom: -5%;
+      left: 50%;
+      transform: translate(-50%, -10%);
+      padding: 0.8rem 2.5rem;
+      border-radius: 1.2rem;
+      outline: none;
+      border: none;
+      font-family: "poppins";
+      background: $toDarkMainColor;
+      position: relative;
+      cursor: pointer;
+      a {
+        color: $white;
+      }
+    }.btn:hover {
+      padding: 1rem 2.7rem;
+    }
+  }
+}
+
+.glace .intro {
+  position: absolute;
+  right: 0;
+  height: 100%;
+  width: 70%;
+
+  .container {
+    height: 90%;
+    width: 80%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 1.2rem;
+
+    .top {
+      height: 30%;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+      h1 {
+        font: {
+          size: 2.3rem;
+          family: "Poppins";
+          weight: 600;
+        }
+        color: $DarkerMainColor;
+        margin-bottom: 1.3rem;
+
+        span {
+          color: $toDarkMainColor;
+        }
+      }
+      p {
+        font: {
+          size: 3.5rem;
+          family: "Poppins";
+          weight: 700;
+        }
+        color: $toDarkMainColor;
+        margin-top: -15px;
+      }
+    }
+    .middle {
+      height: 50%;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      h2 {
+        margin-top: 1.5rem;
+        font: {
+          size: 2.3rem;
+          family: "Roboto";
+          weight: 700;
+        }
+        color: $darkMainColor;
+        margin-bottom: 0.5rem;
+      }
+      .slide {
+        height: 50px;
+        width: 200px;
+
+        p {
+          margin-left: 1.5rem;
+          padding: 10px 0px;
+          width: 250px;
+
+          span {
+            font: {
+              size: 3.5rem;
+              family: "poppins";
+              weight: bold;
+            }
+            color: $DarkerMainColor;
+            display: none;
+            transition: 0.5s;
+            animation: showAnimation 0.5s infinie;
+          }
+
+          .show-in {
+            display: block;
+            animation: showAnimation 0.5s ease;
+          }
+          .show-out {
+            animation: hideAnimation 0.5s ease;
+          }
+
+          @keyframes hideAnimation {
+            0% {
+              transform: scale(0);
+            }
+            99% {
+              transform: scale(1);
+            }
+          }
+        }
+      }
+    }
+    .bottom {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      width: 100%;
+      height: 20%;
+      border-top-left-radius: 1.2rem;
+      border-top-right-radius: 1.2rem;
+      background-color: $mainColor;
+
+      h3 {
+        font: {
+          size: 2rem;
+          family: "Poppins";
+          weight: 600;
+        }
+        color: $toDarkMainColor;
+        margin-top: 0.5rem;
+      }
+      .social-media {
+        height: 100%;
+        width: 30rem;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+
+        i {
+          padding: 3px;
+          font-size: 2.5rem;
+        }
+        .all {
+          padding: 5px;
+          border-radius: 0.8rem;
+          height: 40px;
+          width: 40px;
+          a {
+            .fa-facebook {
+              color: #1877f2;
+            }
+            .fa-twitter {
+              color: #1da1f2;
+            }
+            .fa-instagram {
+              color: #c32aa3;
+            }
+          }
+        }
+        .all:hover {
+          background-color: $white;
+          transform: scale(1.1);
+        }
+      }
+    }
+  }
+}

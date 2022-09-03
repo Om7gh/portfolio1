@@ -1,0 +1,88 @@
+.hero {
+  .experience {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -40%);
+    font: {
+      size: 2rem;
+      family: "Poppins";
+      weight: 700;
+    }
+    color: $DarkerMainColor;
+  }
+}
+
+.right-barre {
+  .hero-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 1.5rem;
+    .box-competance {
+
+        position: relative;
+      border: 2px solid $mainColor;
+      border-radius: 1rem;
+      width: 90%;
+      height: 90%;
+      margin-top: 1rem;
+      margin-left: 1rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      box-shadow: 5px -5px 20px $mainColor, -5px 5px 20px $mainColor ;
+      .cercle-progress {
+        height: 80%;
+        width: 80%;
+        border-radius: 50%;
+        position: relative;;
+        background-color: transparent;
+        display: grid;
+        place-items: center;
+        z-index: 98;
+        .info {
+            z-index: -2;
+          height: 100%;
+          width: 100%;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          z-index: 100;
+          color: $DarkerMainColor;
+          font: {
+            size: 1.6rem;
+            family: 'poppins';
+            weight: 700;
+          }
+        }
+      }
+    }
+  }
+}
+// .cercle-progress:after {
+//     content: "";
+//     position: absolute;
+//     height: 90%;
+//     width: 90%;
+//     border-radius: 50%;
+//     background-color: rgba(255,255,255,.9);
+//     z-index: 99;
+//   }
+
+  circle {
+    fill: $mainColor;
+    stroke-width: 10px;
+    stroke: $toDarkMainColor;
+    stroke-dasharray: 472;
+    stroke-dashoffset: 0;
+    transition: 2s linear;
+  }
+
+  svg {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+  }

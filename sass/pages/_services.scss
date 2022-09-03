@@ -1,0 +1,136 @@
+.glace {
+  .left {
+    width: 25%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .box-serv {
+      width: 80%;
+      height: 90%;
+      background: rgba(255, 255, 255, 0.5);
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      border: 1.2rem;
+
+      .fa-hashtag {
+        font: {
+          size: 4rem;
+          family: "Mochiy Pop One";
+          weight: 500;
+        }
+        color: $toDarkMainColor;
+        margin-bottom: 1rem;
+      }
+      h2 {
+        font: {
+          size: 2.2rem;
+          family: "poppins";
+          weight: 00;
+        }
+        color: $DarkerMainColor;
+      }
+    }
+  }
+
+  .right {
+    width: 75%;
+    .hero-content {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      .carte {
+        overflow: hidden;
+        position: relative;
+        width: calc((100% / 3) - 2rem);
+        height: 80%;
+        border: 2px solid $darkMainColor;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 1.5rem;
+        background-color: $white;
+        transition: 0.5s;
+        .content-cart {
+          position: relative;
+          height: 80%;
+          width: 90%;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          .loading {
+            font: {
+              size: 2.1rem;
+              family: "poppins";
+              weight: bold;
+            }
+            color: $DarkerMainColor;
+          }
+          .parag-loding {
+            font: {
+              size: 1.7rem;
+              family: "Roboto";
+              weight: 400;
+            }
+            width: 14rem;
+            line-height: 1.6;
+            margin-top: 1.2rem;
+            color: $toDarkMainColor;
+          }
+          button {
+            padding: 0.7rem 1.4rem;
+            background-color: $mainColor;
+            border: none;
+            border-radius: 1.2rem;
+            position: absolute;
+            bottom: 1rem;
+            box-shadow: 5px 5px 10px $black, 2px 2px 5px inset $white;
+            transition: 0.3s;
+            a {
+              color: $black;
+              font: {
+                family: "Poppins";
+              }
+            }
+          }
+          button:hover {
+            transform: translateY(-0.5rem);
+          }
+        }
+      }
+      .price {
+        text-align: center;
+        position: absolute;
+        top: 3%;
+        left: -2.2rem;
+        width: 10rem;
+        height: 2rem;
+        transform: rotate(-45deg);
+        font: {
+            size: 1.2rem;
+            family:'Poppins';
+            weight: bold;
+        }
+        color: $black;
+        background-color: $white;
+      }
+      .carte:hover {
+        transform: translateY(-0.8rem);
+      }
+      .carte::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(to right top, $mainColor, $darkMainColor);
+        border-radius: 1.2rem;
+      }
+      
+    }
+  }
+}
