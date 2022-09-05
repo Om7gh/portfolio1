@@ -47,8 +47,8 @@
       label {
         font: {
           size: 1.5rem;
-          family: "Poppins";
-          weight: 700;
+          family: $font;
+          weight: 800;
         }
         margin-bottom: 0.5rem;
         color: $toDarkMainColor;
@@ -65,8 +65,8 @@
         resize: none;
         border-bottom: 1px solid $black;
         font: {
-          family: "Roboto";
-          weight: 600;
+          family: $font;
+          weight: 700;
         }
       }
       input:focus,
@@ -83,10 +83,11 @@
       bottom: 7%;
       left: 25%;
       transform: translateX(25%,-7%);
+      transition: all .4s;
       cursor: pointer;
       color: $darkMainColor;
       font: {
-        family: "Roboto";
+        family: $font;
         weight: bold;
         size: 1.5rem;
       }
@@ -94,7 +95,6 @@
     button:hover {
       background-color: $darkMainColor;
       color: $DarkerMainColor;
-      transform: translateY(-.5rem);
 
     }
     .error {

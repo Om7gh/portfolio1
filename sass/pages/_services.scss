@@ -22,13 +22,13 @@
           weight: 500;
         }
         color: $toDarkMainColor;
-        margin-bottom: 1rem;
+        margin-bottom: 2rem;
       }
       h2 {
         font: {
           size: 2.2rem;
-          family: "poppins";
-          weight: 00;
+          family: $font;
+          weight: 800;
         }
         color: $DarkerMainColor;
       }
@@ -64,7 +64,7 @@
           .loading {
             font: {
               size: 2.1rem;
-              family: "poppins";
+              family: $font;
               weight: bold;
             }
             color: $DarkerMainColor;
@@ -72,13 +72,13 @@
           .parag-loding {
             font: {
               size: 1.7rem;
-              family: "Roboto";
-              weight: 400;
+              family: $font;
+              weight: 800;
             }
             width: 14rem;
             line-height: 1.6;
             margin-top: 1.2rem;
-            color: $toDarkMainColor;
+            color: $white;
           }
           button {
             padding: 0.7rem 1.4rem;
@@ -90,9 +90,11 @@
             box-shadow: 5px 5px 10px $black, 2px 2px 5px inset $white;
             transition: 0.3s;
             a {
-              color: $black;
+              color: $white;
               font: {
-                family: "Poppins";
+                family: $font;
+                size: 1.5rem;
+                weight: 900;
               }
             }
           }
@@ -133,4 +135,16 @@
       
     }
   }
+}
+
+main .left-barre .go-back-to-home {
+  position: absolute;
+  bottom: 7rem;
+  width: 200px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #65dfc9;
+  border-radius: 5px;
 }
